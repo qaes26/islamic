@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحضارة العربية الإسلامية: ملاحظات واختبار</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #f8f0e3, #e8d9c2); /* Warmer, softer gradient background */
+            line-height: 1.7;
+            color: #4a4a4a; /* Slightly softer text color */
+        }
+        .container {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 2.5rem;
+            background-color: #ffffff;
+            border-radius: 20px; /* Even more rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Slightly softer, larger shadow */
+        }
+        h1 {
+            color: #6a0572; /* Deeper, richer heading color */
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid #ab47bc; /* Matching purple border */
+            padding-bottom: 0.8rem;
+            text-align: center;
+            font-size: 2.8rem; /* Slightly larger main title */
+            font-weight: 700;
+        }
+        h2, h3, h4 {
+            color: #8e24aa; /* Purple shade for sub-headings */
+            margin-top: 2.5rem; /* More space above sub-headings */
+            margin-bottom: 1rem;
+            border-bottom: 1.5px solid #e1bee7; /* Lighter purple border for sub-headings */
+            padding-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        h2 { font-size: 2.2rem; }
+        h3 { font-size: 1.6rem; }
+
+        .student-info {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #777;
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .section {
+            margin-bottom: 3.5rem; /* More spacing between sections */
+            padding-bottom: 2.5rem;
+            border-bottom: 1px dashed #dcdcdc;
+        }
+        .section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1rem; /* Slightly more space for list items */
+        }
+        .list-item-bullet {
+            color: #d4a373; /* Earthy tone for bullets */
+            font-size: 1.4rem; /* Larger bullet point */
+            line-height: 1;
+            margin-left: 0.8rem; /* More space from bullet to text */
+            flex-shrink: 0;
+        }
+        .note {
+            background-color: #f7ede2; /* Light creamy background for notes */
+            border-radius: 12px;
+            padding: 1.3rem;
+            margin-top: 1.8rem;
+            border-right: 6px solid #e3a95d; /* Warm orange border for notes */
+            color: #a0522d; /* Darker orange-brown text */
+        }
+        .highlight {
+            color: #c0392b; /* Strong red for highlights */
+            font-weight: bold;
+            background-color: #ffead2; /* Lighter creamy orange background for highlights */
+            padding: 3px 7px;
+            border-radius: 6px;
+        }
+        .box {
+            border: 2px solid #5a189a; /* Darker purple border for boxes */
+            padding: 1.3rem;
+            border-radius: 12px;
+            margin-top: 1.8rem;
+            background-color: #f0e6fa; /* Lighter purple background for boxes */
+            color: #4a005c;
+        }
+        .box-title {
+            font-weight: bold;
+            color: #6a1b9a; /* Matching dark purple for box title */
+            margin-bottom: 0.7rem;
+            display: block;
+        }
+        .indented {
+            margin-right: 2.2rem; /* More indentation */
+            padding-right: 0.6rem;
+            border-right: 2px dotted #bbb;
+        }
+
+        /* Quiz specific styling */
+        #quiz-section {
+            background-color: #fbfbfb; /* Lighter background for quiz */
+            border: 1px solid #f0f0f0;
+            padding: 2.5rem;
+            border-radius: 16px;
+            margin-top: 4rem;
+            box-shadow: inset 0 2px 5px rgba(0,0,0,0.05); /* Inner shadow for depth */
+        }
+        .question {
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.2rem;
+            border-bottom: 1px dashed #f0f0f0;
+        }
+        .question p {
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        .option label {
+            display: block;
+            margin-bottom: 0.6rem;
+            cursor: pointer;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            transition: background-color 0.25s ease, transform 0.1s ease;
+            border: 1px solid #e9ecef;
+            background-color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .option label:hover {
+            background-color: #f5f5f5;
+            transform: translateY(-1px);
+        }
+        .option input[type="radio"] {
+            margin-left: 0.6rem;
+            transform: scale(1.1); /* Slightly larger radio buttons */
+        }
+        .submit-button {
+            display: block;
+            width: fit-content;
+            margin: 2.5rem auto 0;
+            padding: 1.1rem 3rem;
+            background: linear-gradient(to right, #8e24aa, #6a0572); /* New purple gradient */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+            letter-spacing: 0.5px;
+        }
+        .submit-button:hover {
+            background: linear-gradient(to right, #6a0572, #8e24aa);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+            transform: translateY(-3px) scale(1.02);
+        }
+        #quiz-results {
+            margin-top: 2.5rem;
+            padding: 1.8rem;
+            background-color: #e6f7ff; /* Light blue background for results */
+            border: 1px solid #b3e0ff; /* Blue border */
+            border-radius: 14px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            color: #1a237e; /* Dark blue text */
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .correct-answer {
+            color: #2e7d32; /* Darker green for correct answers */
+        }
+        .wrong-answer {
+            color: #d32f2f; /* Darker red for wrong answers */
+        }
+        .quiz-option.correct label {
+            background-color: #e8f5e9; /* Soft green */
+            border: 1px solid #4caf50;
+        }
+        .quiz-option.incorrect label {
+            background-color: #ffebee; /* Soft red */
+            border: 1px solid #ef5350;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-4 sm:p-6 lg:p-8">
+    <div class="container">
+        <h1>الحضارة العربية الإسلامية</h1>
+        <p class="student-info">إعداد الطالب: قيس طلال غالب الجازي</p>
+
+        <!-- قسم الحضارة العربية الإسلامية: ايديولوجيا -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية: ايديولوجيا</h2>
+            <div class="box">
+                <p>كل رسول نبي وليس كل نبي رسول.</p>
+            </div>
+            <h3 class="text-xl font-semibold mt-6 mb-4">خصائص الحضارة العربية الإسلامية:</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>لا نريد أن نجمد خصائص الحضارة العربية الإسلامية لتجسس الشخصية العربية الإسلامية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>حضارة ربانية (الحضارة العربية الإسلامية لها محتوى رباني).</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مشيئة الإنسان هي الأولوية عندما تكون بنية قلبية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مشيئة الله <span class="highlight">موهبة فطرية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>إرادة الله.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>إن الله.</p>
+            </div>
+            <p class="indented">يُبرم فيها مشيئة الإنسان.</p>
+        </div>
+
+        <!-- قسم إدامة المعرفة الحضارية -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">إدامة المعرفة الحضارية</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>إنتاج المعرفة الحضارية</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">1.</span>
+                <p>قدم لنا الإسلام شيء مهم وأعطانا رؤية ونظرية للوجود.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">2.</span>
+                <p>هناك ربط دقيق بين نظرية الوجود، التاريخي ونظرية المعرفة العلمية.</p>
+            </div>
+            <h3 class="text-xl font-medium mt-6">المفاهيم في النظرية المعرفية</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مهمة جداً، ولكن لا يعبر عنها دلالة المفهوم.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>دور الإنسان في فلسفة التغيير.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>قضية: <span class="highlight">اللهم أههم مع الأخذ بالأسباب.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>السعي ليس صب في الرزق، وإنما هو حالة من حالات الرزق.</p>
+            </div>
+            <div class="note">
+                <p><span class="box-title">behavior</span>: نمط سلوك</p>
+            </div>
+            <div class="box">
+                <p><span class="box-title">theory</span>: نظرية</p>
+                <p class="indented">أبعاد: جمال (الله)</p>
+                <p class="indented">الإنسان لا يخلق</p>
+                <p class="indented">الكون</p>
+            </div>
+            <div class="note">
+                <p><span class="box-title">Values</span>: قيمة</p>
+                <p><span class="box-title">civilized</span>: حضاري</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية: معرفة -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية: معرفة</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>كيف نعيد إنتاج الذات الحضارية عموماً والإسلامية؟</p>
+            </div>
+            <p class="indented">هناك حالة من حالات الإدراك للمفاهيم الحضارية.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>حضارة إنسانية</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>حضارة أخلاقية</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>علاقة عقل وعلم</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>بـرَمجَة العقول في إنتاج المعرفة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>الوعي يتجاوز حدود العقل.</p>
+            </div>
+            <p class="indented">لم نطل الإعتداد لعقيدتنا.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>الثقافة المميزة في النظرية المعرفية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>صفة الإيجابية.</p>
+            </div>
+            <div class="box">
+                <p>لا تعلم شيء تهذب به تجهيزكم</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة: طريقة تفكير ومنهج سلوك -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة: طريقة تفكير ومنهج سلوك.</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>رؤية الوجود عمقا تدوياً.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>هناك ربط محكم بين نظرية الوجود التاريخي وبين نظرية المعرفة العلمية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>وجهة الحقيقة الوجودية والإنسجام المعرفي هذه تقودنا إلى <span class="highlight">مشيئة إرادة الله.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>هناك ما يسمى بـ "مفردات بمسهمات المعرفة" يقودنا بأن الله عز وجل مطلق في علمه ووجوده.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>تباين المصادر العلمية في النظرية المعرفية الإسلامية تتأخر حول هو إبراز الهدف أسمى وهو حقيقة نظرية الوجود.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الوعي السماوي هو المصدر الروحي للحقيقة المطلقة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>جوهر هو العقيدة الإيمانية هي بناء حضاري تطوري.</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية</h2>
+            <div class="box">
+                <p>"المصداقية هي السمة المميزة للوجود."</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>إدراك القيمة المعرفية (الحضارية) للمعرفة ليس أساساً في نمط التفكير الظاهري.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>ثقافة الحوار العلمي، <span class="highlight">بأن الله عز وجل أراد للإنسان أن يجسد فلسفته ووجوده.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">إمرأة:</span>
+                <p>أبو العرب <span class="highlight">فهمه نظرياً</span> <span class="highlight">ربانياً</span>.</p>
+            </div>
+            <p class="indented">هويتنا جداً، وما سدون في أن إهتمام حضارياً.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الموسوعية المعرفية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العصر الأموي العباسي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العصر العباسي: العامرة</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العصر الفاطمي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العصر الإيوبي - العصر المملوكي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العصر العثماني.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العرب ما قبل الإسلام - عقبة الإستعمار.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العصر الإسلامي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العهد النبوي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>أكثر من عصر.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>الخلافة الراشدة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>العصر الأموي.</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية</h2>
+            <h3 class="text-xl font-medium mb-4">بيت الحكمة</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>تطورية بنائية، هناك مزيد من التطور.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>المعرفة قوة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>هناك نوعين من العقول المعرفية: <span class="highlight">الفكر المجرد</span> (الوعي) و <span class="highlight">الفكر الاجتماعي</span> (فكر تجريبي عرضي).</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مناهج نظرية الوجود الإنساني حضارياً.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>بناء الإنسان: علم الإنسان.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>الأسرة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>مجتمع.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>الأمة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>حضارة.</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية (العمق والقيمة) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية</h2>
+            <div class="note">
+                <p><span class="box-title">depth</span>: عمق</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p><span class="box-title">المعرفة</span> مفهوم حضاري علمي، <span class="highlight">الوعي الذي لا يمثل أهمية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>إدارة المعرفة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>"قيمة المعرفة".</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>"دلالة المعرفة": <span class="highlight">هي عمق المعنى</span> <span class="highlight">ظلال المعنى.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>"القيمة التراكمية": هي <span class="highlight">قيمة / صفة لأي حضارة إسلامية.</span></p>
+            </div>
+            <div class="box">
+                <p>مفهوم المعرفة <span class="highlight">نظرية معرفية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>علم المنهج، عمق فكرة وإنجازات الحضارة العلمية الإسلامية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>النظرية المعرفية: <span class="highlight">هي التكامل مع المنهج النقدي.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>رؤية علمية مجودة: <span class="highlight">تحقق الجانب العالي للمعرفة.</span></p>
+            </div>
+        </div>
+
+        <!-- قسم عام (الفلسفة والإجتهاد) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">رؤى فلسفية ومنهجية</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>كل رأي صواب، <span class="highlight">يحتمل الخطأ ورأيي خطأ يحتمل الصواب.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الإستجابة في الفكر العلمي والأهم <span class="highlight">الإجتهاد المسبب الإستجابة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الفلسفة الميكافيلية: <span class="highlight">الغاية تبرر الوسيلة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>في عقيدتنا سمائنا: <span class="highlight">الغاية تبرر الوسيلة ولا تبررها.</span></p>
+            </div>
+            <p class="indented">نظرية وليست تبريرية.</p>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية (حقل الطب) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية: حقل الطب</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>بحث</p>
+            </div>
+            <div class="box">
+                <p><span class="box-title">descense</span>: خطاب</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أزمة حضارية أخلاقية في فلسفة وجودنا.</p>
+            </div>
+            <h3 class="text-xl font-medium mt-6">فلسفة القيمة في النظرية المعرفية الحضارية</h3>
+            <div class="box">
+                <p><span class="box-title">خلاصة</span>: مفاهيم جوهرية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>السطحية <span class="highlight">البساطة فضيلة.</span></p>
+            </div>
+            <h3 class="text-xl font-medium mt-6 mb-4">إنجازات في الطب:</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>المبادئ والموسوعات الطبية في الحضارة الإنسانية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p><span class="box-title">الطبيب</span>: علي ابن سهل كان رائد المروحة في الفكرة.</p>
+            </div>
+            <p class="indented">أؤكد على الجوانب السلوكية والتفائلية الطبية النفسية.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p><span class="box-title">الطبيب</span>: محمد بن زكريا الرازي: تشخيص العلاج الطبية.</p>
+            </div>
+            <p class="indented">مبادرة الطب: كانت أهم معالم الحضارة العربية.</p>
+            <p class="indented">علماء الطب تميزوا بالموسوعة الحضارية والإنسانية.</p>
+        </div>
+
+        <!-- قسم التربية الذهنية -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">التربية الذهنية:</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>التربية الأخلاقية المعرفية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>الوجه الحضاري <span class="highlight">فلسفة القيمة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>العلوم الرياضية من الحضارة العربية الإسلامية شكلت <span class="highlight">مركز</span> الحضارة الإنسانية.</p>
+            </div>
+            <h3 class="text-xl font-medium mt-6 mb-4">إنجازات في الرياضيات:</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>علماء الرياضيات تميزوا بالموسوعة الحضارية:</p>
+            </div>
+            <p class="indented">مضمونها: الإنتاج العلمي في حقلي الرياضيات، الهندسة في الحضارة، إلخ. كان أساساً وليس إضافة.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>محمد بن موسى الخوارزمي من أشهر من برز من خلال رياضيات.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أوجد علم الجبر، جعل علم الجبر علماً مستقلاً من علم الحساب، هو استرجع العدد المجهول من المعلوم في كتابه: <span class="highlight">الجبر والمقابلة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مُدَخَّرت كما ميلاد فرع الكتاب إلى اللغة اللاتينية. أوجد الجذر (-) وال (+).</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أوجد فتح "رياضياً" جديد <span class="highlight">المنهج المخروطي.</span></p>
+            </div>
+        </div>
+
+        <!-- قسم كيف نتعلم؟ كيف نفكر؟ -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">كيف نتعلم؟ كيف نفكر؟</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>فهمهم <span class="highlight">إدراك ووعي.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>البناء المعرفي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>رواية قلب الظلمة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>جوزيف كونراد.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>موسوعية علماء الحضارة العربية الإسلامية <span class="highlight">من الإنسانية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أن نقرأ كيف نقرأ؟</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>محمد البتاني: <span class="highlight">عم</span> / أشهر من مرجع بين الرياضيات والهندسة.</p>
+            </div>
+            <p class="indented">هو أول من عمم الرموز الرياضية / هو أول من استخدم الجداول الرياضية.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>ثابت ابن قرة: أول من حسب طول السنة الشمسية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أبو الوفاء البوزجاني: <span class="highlight">تميز في حساب المثلثات الكروية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>نجم الدين الطوسي: <span class="highlight">فضل تميز في هندسة أجر الأبناء وفعالها.</span></p>
+            </div>
+        </div>
+
+        <!-- قسم الدعم الشعوري (الصيدلة والتشريح) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الدعم الشعوري</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>علاء الدين بن النفيس القرشي.</p>
+            </div>
+            <p class="indented">مؤسس علم التشريح وعلم وظائفه الأعضاء.</p>
+            <p class="indented">اكتشف الدورة الدموية الصغرى.</p>
+            <h3 class="text-xl font-medium mt-6 mb-4">إنجازات في الصيدلة:</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>الصيدلة <span class="highlight">هي أبحاث في مهنة العقاقير.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>علم الأدوية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الصيدلة في الطب هي <span class="highlight">الرهان البرهاني</span> من أشهر من كتب في الصيدلة: <span class="highlight">جذورها اللغوية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الرازي: هو أول من نادى بأن يستقل علم الطب عن علم الصيدلة.</p>
+            </div>
+            <p class="indented">وظائف الكيمياء في الصيدلة.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>تصنيف المعرفة.</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية (التربية الأخلاقية وعلم البصريات) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>التربية الأخلاقية في عمق النفس الإجتماعية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>علم المستقبل - دراسة المستقبل.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p><span class="highlight">اغتراب.</span></p>
+            </div>
+            <div class="note">
+                <p><span class="box-title">apsilutly</span>: مطلق.</p>
+            </div>
+            <h3 class="text-xl font-medium mt-6 mb-4">إنجازات في البصريات:</h3>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية: خطأ -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية: خطأ</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>إنتظام وتكامل معرفي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>كلما كان لديك القدرة على النمو المعرفي كنت أقدم إلى التكامل المعرفي في شخصيتك.</p>
+            </div>
+            <div class="box">
+                <p><span class="box-title">management of knowledge</span>: إدارة المعرفة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>النظام المعرفي <span class="highlight">النمو المعرفي</span> <span class="highlight">التكامل المعرفي.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>نتائج النقد الحضاري: كلما كان النقد قدم لنا أكثر كلما تطورنا أكثر.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">/</span>
+                <p>أبو قاسم الزهراوي: التعريف له مؤسس علم الجراحة، ممكن من التالي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">/</span>
+                <p>الأمير ابن سينا: علم الصيدلة.</p>
+            </div>
+            <div class="box">
+                <p><span class="box-title">قانون في الطب</span> <span class="highlight">أكثر من شخصية.</span></p>
+                <p><span class="box-title">الخاصية</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>ابن سينا مؤلفه.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>مميزات قضية الشارح والوافي.</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية (الخلل في منهج التفكير) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية (منهج التفكير)</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>"الملتقى لا يرتقي" [<span class="highlight">تكامل ولا تعاضد</span>].</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>"المنطلق الأخلاقي في القيمة الحضارية (عقائدية) محتوى الإسلام الأخلاقي الحضاري".</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>فلسفة الخطاب.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مأساة في الحضارة العربية الإسلامية: <span class="highlight">تراث معرفي</span> و <span class="highlight">الإدراك ومنهج السلوك الأخلاقي.</span> وسبب ذلك <span class="highlight">خلل في منهج التفكير.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p><span class="highlight">أزمة الحضارة</span>: أن <span class="highlight">الخلل قيمة ووجودي في الفلسفة الحضارية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>لماذا تقدم الغرب وتأخر العرب؟</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مبدأ المصداقية في منطقة الوجود.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>نظرية المقاصد <span class="highlight">الفكرية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>توظيف المفهوم في القيمة الفلسفية عقائدياً.</p>
+            </div>
+        </div>
+
+        <!-- قسم إنجازات الحضارة العربية الإسلامية في علم الفلك والمعارف -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">إنجازات الحضارة العربية الإسلامية في علم الفلك والمعارف</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>جذور التاريخي لفلسفة القيمة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>علم الفلك: هو علم من العلوم الذي يدرس الأجرام السماوية وأنواعها المختلفة الكونية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>علم الأرصاد: جمع <span class="highlight">ريح</span> وهي عبارة عن جداول رياضية وقيمة لتوضيح الحركة الكوكبية ومنع نسبة التشويه الفلكي. <span class="note inline-block !m-0 !p-1 text-xs">أهوية = 3622</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>موضوع للمؤتمر: من التوكل <span class="highlight">تجدون</span> ويطور <span class="highlight">حميدة</span> الدلال.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>بيئات الدفع الكافئي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>علم الفلك هو جزء من ثقافتنا الإسلامية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الأثر الوجودي للحضارة العربية الإسلامية في تطور الفكر المعرفي.</p>
+            </div>
+            <p class="indented">يستخدم مصطلح نشوء وتطور <span class="highlight">الفكر الجماعي.</span></p>
+        </div>
+
+        <!-- قسم من أهم مفاهيم الفكر الجغرافي والجغرافيا الفلكية -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">من أهم مفاهيم الفكر الجغرافي والجغرافيا الفلكية</h2>
+            <h3 class="text-xl font-medium mt-6 mb-4">ابن الهيثم وإسهاماته في الجغرافيا والفلك:</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>المناظر في وجه القمر أتيح.</p>
+            </div>
+            <p class="indented">عمد المقال أن القمر وجه مظلم وحجمه المحدود.</p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الفوزي: <span class="highlight">جانب المخلوقات</span> <span class="highlight">وعجائب وحقائق الموجودات.</span></p>
+            </div>
+            <p class="indented">كتابه: <span class="highlight">المسطري</span> في المسالك <span class="highlight">والممالك.</span></p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الإدريسي: <span class="highlight">أعظم جغرافي في الحضارة العربية الإسلامية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>حماية <span class="highlight">درجة المساواة</span> في إختراق الآفاق.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>أشهر بملخص <span class="highlight">للمنظمة الجغرافية.</span></p>
+            </div>
+            <div class="box">
+                <p>ملك صقلية <span class="highlight">روجر الثاني</span> سمع بالإدريسي وطلب منه رسم خريطة محدثة.</p>
+            </div>
+        </div>
+
+        <!-- قسم من الإسهامات الجغرافية الإنسانية في الحضارة العربية الإسلامية -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">من الإسهامات الجغرافية الإنسانية في الحضارة العربية الإسلامية</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>وصول <span class="highlight">لما السفت</span> في <span class="highlight">المحيطات والبحار.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>اهتم المحطات <span class="highlight">بركوب البحر الأطلسي</span> لذلك نحو <span class="highlight">الطريقة البريموجية</span> أي <span class="highlight">تجيب الشقق.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>رسم الخرائط <span class="highlight">ارتبط بتضاريس الفتح الإسلامي.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>فكر <span class="highlight">جغرافية</span> <span class="highlight">فخر وصولية</span> <span class="highlight">بناء</span> <span class="highlight">الإنسان</span> <span class="highlight">بنفس</span> طبيعة المجتمعات التي زارها ونقل لنا <span class="highlight">ثقافة رياضية</span> وتطور <span class="highlight">بين الإنسان</span> كل هذه الفكره <span class="highlight">لبعض</span> <span class="highlight">بخطورة</span> و <span class="highlight">دحض.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أصول لنا كلها <span class="highlight">جغرافياً</span> فلسفة <span class="highlight">القيمة الجغرافية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>المقدسي: <span class="highlight">كتابة</span> <span class="highlight">حسية</span> <span class="highlight">التقسيم</span> <span class="highlight">من معرفة الأقاليم</span> له تأثير بالمعرفة لأنه <span class="highlight">إميز</span> ب<span class="highlight">ماضي</span> <span class="highlight">جغرافي.</span></p>
+            </div>
+        </div>
+
+        <!-- قسم إنجازات الحضارة العربية الإسلامية في مجال الرياضيات (مكرر جزئياً ولكن تم تعديله) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">إنجازات الحضارة العربية الإسلامية في مجال الرياضيات</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الذائقة العلمية: كيف <span class="highlight">نحن</span> <span class="highlight">نستدرج</span> <span class="highlight">المعرفة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الوعي العلمي: <span class="highlight">منهج البحث العلمي</span> و <span class="highlight">الرؤية العلمية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>نظرية المؤونة: <span class="highlight">في نظرية نقدية مطلقة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>موسوعة علم الفلك: لم يكن <span class="highlight">مستقل</span> ب<span class="highlight">حجارة</span> <span class="highlight">صحيح.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مدارس متخصصة في علم الفلك:</p>
+            </div>
+            <div class="list-item indented">
+                <span class="list-item-bullet">1)</span>
+                <p>المدرسة البغدادية.</p>
+            </div>
+            <div class="list-item indented">
+                <span class="list-item-bullet">2)</span>
+                <p>...</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية (ابن الهيثم وإنجازات البصريات) -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية</h2>
+            <h3 class="text-xl font-medium mb-4">ابن الهيثم: تسلط على التربية وإنجازاته في البصريات</h3>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>له كتاب عن الاستدلال <span class="highlight">بالحقائق العلمية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>يستخدم ابن الهيثم: مصطلح جديد <span class="highlight">الضوء</span> <span class="highlight">عصب الرؤية.</span></p>
+            </div>
+            <p class="indented">الحجرة السوداء <span class="highlight">هي</span> أسلوب التصوير <span class="highlight">الفوتوغرافي.</span></p>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أهم كتاب ألفه ابن الهيثم: <span class="highlight">كتاب المناظر</span> <span class="highlight">تدرج.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أبى الشهرة الأولية في <span class="highlight">الأبصار.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>وهذا الكتاب <span class="highlight">اختلف</span> مع <span class="highlight">علماء الحضارة</span> <span class="highlight">الأمريكية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>كتاب المناظر لابن الهيثم <span class="highlight">ترجم</span> إلى <span class="highlight">اللاتينية.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>ما قدمه ابن الهيثم <span class="highlight">صورة</span> في <span class="highlight">الحضارة العربية</span> <span class="highlight">الإسلامية</span> في <span class="highlight">كتاب</span> <span class="highlight">فحفا.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أوجد ابن الهيثم <span class="highlight">قوانين</span> <span class="highlight">لا تنحى</span> <span class="highlight">هي</span> <span class="highlight">الضوء</span> و <span class="highlight">الظلام</span> <span class="highlight">ولا</span> <span class="highlight">عطاء.</span></p>
+            </div>
+            <div class="note">
+                <p>1541: ضوء كتاب المناظر.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مصطلح <span class="highlight">تخريف</span> <span class="highlight">حسب دراسة</span> <span class="highlight">مصنفة</span> من <span class="highlight">ابن الهيثم</span> وغيرها في <span class="highlight">جامعة القاهرة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>المنهج العلمي التجريبي.</p>
+            </div>
+        </div>
+
+        <!-- قسم نظرية الظاهرة المعرفية والظلمة الراقصين -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">نظرية الظاهرة المعرفية والظلمة الراقصين</h2>
+            <div class="note">
+                <p>مفهوم جولة</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>هندسة <span class="highlight">الجهل</span> <span class="highlight">المعرفي</span> أو أن <span class="highlight">الكون</span> <span class="highlight">يخفون</span> و <span class="highlight">حضور</span> <span class="highlight">لا</span> <span class="highlight">لجهل</span> <span class="highlight">وبحث</span> <span class="highlight">شيء</span> <span class="highlight">من</span> <span class="highlight">ذلك</span> <span class="highlight">مجهول.</span></p>
+            </div>
+            <div class="box">
+                <p><span class="box-title">الحديث</span>: أسامة بن زيد.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>نظرية التكامل المعرفي.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>لماذا تقدم الغرب وتأخر العرب؟</p>
+            </div>
+        </div>
+
+        <!-- قسم الحضارة العربية الإسلامية في ضوء التكريات -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الحضارة العربية الإسلامية في ضوء التكريات</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>نظرية القيمة المعرفية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الوعي المعرفي: <span class="highlight">ليس</span> <span class="highlight">كل</span> <span class="highlight">من</span> <span class="highlight">يبحث</span> <span class="highlight">اد</span> <span class="highlight">مندفع</span> في الحضارة الإنسانية.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>كان <span class="highlight">لهم</span> <span class="highlight">دعم</span> <span class="highlight">رائد</span> <span class="highlight">متفاوضين.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">1)</span>
+                <p>قوة الإدخال <span class="highlight">البكري</span> (وقد <span class="highlight">مجموع</span> في <span class="highlight">العين</span>) <span class="highlight">مبحث</span> <span class="highlight">الأبصار.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">2)</span>
+                <p>الاستشعار (حدوث <span class="highlight">الرواية</span>).</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>ابن الهيثم: <span class="highlight">هو</span> <span class="highlight">رائد</span> <span class="highlight">العلوم</span> <span class="highlight">البصريات</span> في <span class="highlight">الحضارة</span>.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>اختلاف آراء العلماء الأبقى (قلدوا <span class="highlight">ورطلوا</span>).</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>سوء <span class="highlight">الرؤية</span> عن <span class="highlight">طريق</span> <span class="highlight">المشقة</span> <span class="highlight">ضعف</span> <span class="highlight">من</span> <span class="highlight">العلم</span> <span class="highlight">البصري.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">←</span>
+                <p>المنطق <span class="highlight">الضوئي</span> <span class="highlight">البصري</span> <span class="highlight">خطه</span> <span class="highlight">مستقيم</span> <span class="highlight">بصرياً.</span></p>
+            </div>
+            <div class="note">
+                <p>القبة.</p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>العيون <span class="highlight">لا</span> <span class="highlight">روشتفل</span> عن <span class="highlight">الضوء</span> <span class="highlight">x-ray</span> <span class="highlight">لتشحن.</span></p>
+            </div>
+        </div>
+
+        <!-- قسم الفكر الحضاري -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">الفكر الحضاري</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>مفهوم <span class="highlight">الاستقرار</span> / مفهوم <span class="highlight">الاستنباط.</span></p>
+            </div>
+            <div class="box">
+                <p>الاستدلال من <span class="highlight">الكل</span> إلى <span class="highlight">الجزء.</span></p>
+                <p>الاستدلال من <span class="highlight">الجزء</span> إلى <span class="highlight">الكل.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الوعي الحضاري هو ليس <span class="highlight">سالي</span> و<span class="highlight">وجود.</span></p>
+            </div>
+        </div>
+
+        <!-- قسم كتاب الكندي -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">كتاب الكندي</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>الاجزاء التي أحدثت <span class="highlight">عدو الغرب</span> وتوضح.</p>
+            </div>
+            <div class="list-item indented">
+                <span class="list-item-bullet">1)</span>
+                <p>الفيزياء.</p>
+            </div>
+            <div class="list-item indented">
+                <span class="list-item-bullet">2)</span>
+                <p>الفلكية.</p>
+            </div>
+            <p class="indented">ممكن في <span class="highlight">العاليا</span> <span class="highlight">مكتب الأسكوريال.</span></p>
+            <p class="indented">طابع <span class="highlight">تجيوبها.</span></p>
+            <div class="list-item">
+                <span class="list-item-bullet">-</span>
+                <p>لم <span class="highlight">يحدد</span> دراسته <span class="highlight">التقية</span> <span class="highlight">العربية</span> لم <span class="highlight">تستفد</span> <span class="highlight">ابن</span> <span class="highlight">العمري</span> <span class="highlight">عقلاه.</span></p>
+            </div>
+        </div>
+
+        <!-- قسم قال الإدريسي -->
+        <div class="section">
+            <h2 class="text-2xl font-semibold mb-4">قال الإدريسي</h2>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أن <span class="highlight">هناك</span> <span class="highlight">بحر</span> <span class="highlight">الظلم.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>وصف <span class="highlight">الإدريسي</span> <span class="highlight">بحر</span> <span class="highlight">الظلم</span> <span class="highlight">برمز</span> <span class="highlight">حرية</span> <span class="highlight">الريح.</span></p>
+            </div>
+            <div class="box">
+                <p>ابن <span class="highlight">بطوطة</span> <span class="highlight">سعى</span> <span class="highlight">لوعيه</span> <span class="highlight">قيق</span> في <span class="highlight">كتاب</span> <span class="highlight">تحقيق</span> <span class="highlight">التجارة</span> في <span class="highlight">نواشيت</span> <span class="highlight">الأبصار</span> <span class="highlight">وعجائب</span> <span class="highlight">الأسفار.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>ميزة <span class="highlight">القوم</span> <span class="highlight">قمت</span> <span class="highlight">براكم</span> <span class="highlight">المعرفة.</span></p>
+            </div>
+            <div class="list-item">
+                <span class="list-item-bullet">*</span>
+                <p>أهم <span class="highlight">ومميزات</span> <span class="highlight">تطور</span> <span class="highlight">الفكر</span> <span class="highlight">الجغرافي</span> <span class="highlight">الحضاري.</span></p>
+            </div>
+            <div class="box">
+                <p>سفر <span class="highlight">بحر</span> <span class="highlight">باسم</span> <span class="highlight">الكتب</span> <span class="highlight">القيم.</span></p>
+                <p>فكرة <span class="highlight">التنقل.</span></p>
+            </div>
+            <div class="box">
+                <p>إلى <span class="highlight">البحر</span> <span class="highlight">المحيط</span> <span class="highlight">الواسع.</span></p>
+                <p>لم <span class="highlight">التوقيت.</span></p>
+                <p>الأرض <span class="highlight">الساحلة.</span></p>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz-section" class="section">
+            <h2 class="text-2xl font-semibold mb-6 text-center">اختبار الحضارة العربية الإسلامية</h2>
+            <form id="quiz-form">
+                <!-- Question 1 -->
+                <div class="question" data-correct-answer="b">
+                    <p>1. ما هي القضية التي تشير إلى الأخذ بالأسباب في الحضارة الإسلامية؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="a"> أ. التوكل على الله فقط.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="b"> ب. اللهم أههم مع الأخذ بالأسباب.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="c"> ج. السعي في الرزق وحده.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q1" value="d"> د. الإيمان بالقدر خيره وشره.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question" data-correct-answer="a">
+                    <p>2. من هو العالم الذي أوجد علم الجبر وجعله علماً مستقلاً؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="a"> أ. محمد بن موسى الخوارزمي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="b"> ب. محمد البتاني.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="c"> ج. ابن سينا.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q2" value="d"> د. أبو الوفاء البوزجاني.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question" data-correct-answer="c">
+                    <p>3. ما هو المفهوم الذي يتجاوز حدود العقل في إنتاج المعرفة؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="a"> أ. الفكر الاجتماعي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="b"> ب. المنهج النقدي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="c"> ج. الوعي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q3" value="d"> د. نظرية القيمة.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question" data-correct-answer="d">
+                    <p>4. من هو مؤسس علم التشريح وعلم وظائفه الأعضاء، واكتشف الدورة الدموية الصغرى؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="a"> أ. الرازي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="b"> ب. ابن سينا.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="c"> ج. أبو قاسم الزهراوي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q4" value="d"> د. علاء الدين بن النفيس القرشي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question" data-correct-answer="b">
+                    <p>5. ما هو الكتاب الشهير لابن الهيثم الذي ترجم إلى اللاتينية؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="a"> أ. الجبر والمقابلة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="b"> ب. كتاب المناظر.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="c"> ج. المسطري في المسالك والممالك.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q5" value="d"> د. قانون في الطب.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question" data-correct-answer="a">
+                    <p>6. ما هو العلم الذي يدرس الأجرام السماوية وأنواعها المختلفة الكونية؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="a"> أ. علم الفلك.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="b"> ب. علم الأرصاد.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="c"> ج. علم البصريات.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q6" value="d"> د. علم الجغرافيا.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question" data-correct-answer="c">
+                    <p>7. ما هي السمة المميزة للوجود في الفلسفة الحضارية؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="a"> أ. التطورية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="b"> ب. البساطة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="c"> ج. المصداقية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q7" value="d"> د. التراكمية.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question" data-correct-answer="b">
+                    <p>8. ما هو أهم ما يميز الحضارة العربية الإسلامية في نظرية المعرفة؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="a"> أ. الاغتراب.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="b"> ب. الثقافة المميزة في النظرية المعرفية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="c"> ج. السطحية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q8" value="d"> د. التعصب.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question" data-correct-answer="a">
+                    <p>9. ما هو المفهوم الذي يشير إلى الاستدلال من الكل إلى الجزء؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="a"> أ. الاستنباط.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="b"> ب. الاستقراء.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="c"> ج. القياس.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q9" value="d"> د. التحليل.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question" data-correct-answer="d">
+                    <p>10. من هو أعظم جغرافي في الحضارة العربية الإسلامية حسب الملاحظات؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="a"> أ. المقدسي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="b"> ب. ابن بطوطة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="c"> ج. الكندي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q10" value="d"> د. الإدريسي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 11 -->
+                <div class="question" data-correct-answer="b">
+                    <p>11. ما هو المنهج الذي يتميز به الوعي العلمي في الحضارة الإسلامية؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q11" value="a"> أ. المنهج الفلسفي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q11" value="b"> ب. منهج البحث العلمي التجريبي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q11" value="c"> ج. المنهج النظري.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q11" value="d"> د. المنهج الاستقرائي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 12 -->
+                <div class="question" data-correct-answer="c">
+                    <p>12. ما هي الأولوية عندما تكون بنية قلبية في مشيئة الإنسان؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q12" value="a"> أ. مشيئة الله.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q12" value="b"> ب. إرادة الإنسان.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q12" value="c"> ج. مشيئة الإنسان.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q12" value="d"> د. القدر.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 13 -->
+                <div class="question" data-correct-answer="a">
+                    <p>13. ما هو المفهوم الذي يصف الحضارة العربية الإسلامية بأنها لها محتوى رباني؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q13" value="a"> أ. حضارة ربانية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q13" value="b"> ب. حضارة إنسانية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q13" value="c"> ج. حضارة أخلاقية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q13" value="d"> د. حضارة معرفية.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 14 -->
+                <div class="question" data-correct-answer="b">
+                    <p>14. ما هو الوجه الحضاري الذي يمثل فلسفة القيمة؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q14" value="a"> أ. إنتاج المعرفة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q14" value="b"> ب. التربية الأخلاقية المعرفية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q14" value="c"> ج. العلوم الرياضية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q14" value="d"> د. الوعي السماوي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 15 -->
+                <div class="question" data-correct-answer="b">
+                    <p>15. من هو العالم الذي كان رائداً في المروحة الفكرية في الطب؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q15" value="a"> أ. محمد بن زكريا الرازي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q15" value="b"> ب. علي ابن سهل.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q15" value="c"> ج. ابن سينا.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q15" value="d"> د. أبو قاسم الزهراوي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 16 -->
+                <div class="question" data-correct-answer="a">
+                    <p>16. ما هو عنوان الكتاب الذي يتحدث عن "الجبر والمقابلة"؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q16" value="a"> أ. كتاب الجبر والمقابلة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q16" value="b"> ب. كتاب المناظر.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q16" value="c"> ج. المسطري في المسالك والممالك.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q16" value="d"> د. قانون في الطب.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 17 -->
+                <div class="question" data-correct-answer="c">
+                    <p>17. ما هي الرؤية التي تقودنا إلى مشيئة إرادة الله؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q17" value="a"> أ. رؤية الفكر المجرد.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q17" value="b"> ب. رؤية الوجود التراكمي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q17" value="c"> ج. وجهة الحقيقة الوجودية والإنسجام المعرفي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q17" value="d"> د. رؤية التاريخ.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 18 -->
+                <div class="question" data-correct-answer="a">
+                    <p>18. ما هو أهم ما يميز أبو الوفاء البوزجاني في الرياضيات؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q18" value="a"> أ. تميزه في حساب المثلثات الكروية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q18" value="b"> ب. إيجاد الجذر (-) و (+).
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q18" value="c"> ج. حساب طول السنة الشمسية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q18" value="d"> د. عمم الرموز الرياضية.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 19 -->
+                <div class="question" data-correct-answer="b">
+                    <p>19. ما هي أبرز إسهامات الإدريسي في الجغرافيا؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q19" value="a"> أ. اكتشاف الدورة الدموية الصغرى.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q19" value="b"> ب. يعتبر أعظم جغرافي في الحضارة الإسلامية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q19" value="c"> ج. تأليف كتاب المناظر.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q19" value="d"> د. إيجاد المنهج المخروطي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 20 -->
+                <div class="question" data-correct-answer="c">
+                    <p>20. ماذا كان جوهر العقيدة الإيمانية في بناء الحضارة؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q20" value="a"> أ. الفكر المجرد.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q20" value="b"> ب. الوعي السماوي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q20" value="c"> ج. بناء حضاري تطوري.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q20" value="d"> د. المنهج النقدي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 21 -->
+                <div class="question" data-correct-answer="a">
+                    <p>21. ما هو المفهوم الذي يشير إلى أن الحضارة العربية الإسلامية لها محتوى رباني؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q21" value="a"> أ. حضارة ربانية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q21" value="b"> ب. حضارة إنسانية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q21" value="c"> ج. حضارة أخلاقية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q21" value="d"> د. حضارة معرفية.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 22 -->
+                <div class="question" data-correct-answer="b">
+                    <p>22. ما هي العلاقة بين العقل والعلم في الحضارة الإسلامية؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q22" value="a"> أ. العقل يحد العلم.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q22" value="b"> ب. علاقة تكامل.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q22" value="c"> ج. العلم يلغي العقل.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q22" value="d"> د. لا توجد علاقة.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 23 -->
+                <div class="question" data-correct-answer="b">
+                    <p>23. من هو العالم الذي نادى بأن يستقل علم الطب عن علم الصيدلة؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q23" value="a"> أ. ابن سينا.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q23" value="b"> ب. الرازي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q23" value="c"> ج. الخوارزمي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q23" value="d"> د. البيروني.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 24 -->
+                <div class="question" data-correct-answer="a">
+                    <p>24. ما هو المفهوم الذي يشير إلى أن الوعي يتجاوز حدود العقل؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q24" value="a"> أ. الوعي يتجاوز حدود العقل.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q24" value="b"> ب. الفكر المجرد.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q24" value="c"> ج. المعرفة قوة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q24" value="d"> د. المنهج التجريبي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 25 -->
+                <div class="question" data-correct-answer="d">
+                    <p>25. ما هو العلم الذي تميز فيه محمد البيروني، وعرف خطوط الطول ودوائر العرض؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q25" value="a"> أ. الطب.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q25" value="b"> ب. الجبر.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q25" value="c"> ج. الصيدلة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q25" value="d"> د. الفيزياء والفلك.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 26 -->
+                <div class="question" data-correct-answer="a">
+                    <p>26. ما هو المنهج الذي يقوم عليه علم المنهج في الحضارة الإسلامية؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q26" value="a"> أ. التكامل مع المنهج النقدي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q26" value="b"> ب. الاستنباط.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q26" value="c"> ج. الاستقراء.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q26" value="d"> د. البحث العلمي التقليدي.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 27 -->
+                <div class="question" data-correct-answer="b">
+                    <p>27. ما هو المفهوم الذي يمثل "قيمة/صفة لأي حضارة إسلامية"؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q27" value="a"> أ. دلالة المعرفة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q27" value="b"> ب. القيمة التراكمية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q27" value="c"> ج. رؤية علمية مجودة.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q27" value="d"> د. إدارة المعرفة.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 28 -->
+                <div class="question" data-correct-answer="d">
+                    <p>28. ما هو أسلوب التصوير الفوتوغرافي الذي أشار إليه ابن الهيثم بـ "الحجرة السوداء"؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q28" value="a"> أ. المنظار.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q28" value="b"> ب. الكاميرا.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q28" value="c"> ج. الصورة الشعاعية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q28" value="d"> د. القبة. (توجد إشارة إلى القبة كنموذج في الملاحظات)
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 29 -->
+                <div class="question" data-correct-answer="c">
+                    <p>29. ما هي أبرز إسهامات ثابت بن قرة في علم الفلك؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q29" value="a"> أ. إيجاد المنهج المخروطي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q29" value="b"> ب. حساب المثلثات الكروية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q29" value="c"> ج. أول من حسب طول السنة الشمسية.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q29" value="d"> د. تعميم الرموز الرياضية.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Question 30 -->
+                <div class="question" data-correct-answer="b">
+                    <p>30. ما هو نوع الفكر الذي يتجاوز حدود العقل حسب الملاحظات؟</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q30" value="a"> أ. الفكر الاجتماعي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q30" value="b"> ب. الفكر المجرد (الوعي).
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q30" value="c"> ج. الفكر التجريبي.
+                        </label>
+                    </div>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="q30" value="d"> د. الفكر النقدي.
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">تقديم الاختبار</button>
+            </form>
+            <div id="quiz-results" class="hidden"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const quizForm = document.getElementById('quiz-form');
+            const quizResults = document.getElementById('quiz-results');
+            const questions = Array.from(quizForm.querySelectorAll('.question'));
+
+            quizForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                let score = 0;
+                let totalQuestions = questions.length;
+
+                questions.forEach((questionElement, index) => {
+                    const selectedOption = questionElement.querySelector(`input[name="q${index + 1}"]:checked`);
+                    const correctAnswer = questionElement.dataset.correctAnswer;
+                    const options = Array.from(questionElement.querySelectorAll('.option label'));
+
+                    // Reset previous styling
+                    options.forEach(label => {
+                        label.parentElement.classList.remove('correct', 'incorrect');
+                    });
+
+                    if (selectedOption) {
+                        if (selectedOption.value === correctAnswer) {
+                            score++;
+                            selectedOption.parentElement.classList.add('correct');
+                        } else {
+                            selectedOption.parentElement.classList.add('incorrect');
+                            // Highlight the correct answer if the selected one was wrong
+                            questionElement.querySelector(`input[value="${correctAnswer}"]`).parentElement.classList.add('correct');
+                        }
+                    } else {
+                        // If no option is selected, just show the correct answer
+                        questionElement.querySelector(`input[value="${correctAnswer}"]`).parentElement.classList.add('correct');
+                    }
+
+                    // Disable all radio buttons after submission
+                    const radioButtons = questionElement.querySelectorAll('input[type="radio"]');
+                    radioButtons.forEach(radio => radio.disabled = true);
+                });
+
+                quizResults.innerHTML = `
+                    <p>نتيجتك: <span class="text-blue-600">${score}</span> من <span class="text-blue-600">${totalQuestions}</span></p>
+                    <p class="mt-2">نسبة النجاح: <span class="text-blue-600">${((score / totalQuestions) * 100).toFixed(2)}%</span></p>
+                `;
+                quizResults.classList.remove('hidden');
+
+                // Disable submit button after first submission
+                document.querySelector('.submit-button').disabled = true;
+            });
+        });
+    </script>
+</body>
+</html>
